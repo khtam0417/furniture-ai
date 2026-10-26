@@ -1,0 +1,141 @@
+{
+ "property": "The Archive (New Haven, CT)",
+ "name": "The Archive",
+ "aliases": [
+  "the archive",
+  "archive",
+  "the archive apartments",
+  "archive apartments",
+  "the archive new haven"
+ ],
+ "entry_points": [
+  {
+   "hosts": [
+    "thearchiveapts.com",
+    "www.thearchiveapts.com"
+   ],
+   "path_pattern": "^/(?:availability/?)?$"
+  },
+  {
+   "hosts": [
+    "entrata.thearchiveapts.com"
+   ],
+   "path_pattern": "^/new-haven/the-archive(?:/(?:conventional|floorplans))?/?$"
+  }
+ ],
+ "website": "https://thearchiveapts.com/availability",
+ "hosts": [
+  "entrata.thearchiveapts.com",
+  "thearchiveapts.com",
+  "www.thearchiveapts.com"
+ ],
+ "address": "848 Chapel Street, New Haven, CT 06510",
+ "city": "New Haven",
+ "state": "CT",
+ "zip": "06510",
+ "location_source": "Public building address recorded with the browser observation.",
+ "image_hosts": [
+  "medialibrarycfo.entrata.com"
+ ],
+ "source_page": "https://entrata.thearchiveapts.com/new-haven/the-archive/conventional/",
+ "observed_at": "2026-10-26T02:41:50.610Z",
+ "method": "Official public floor-plan gallery observed in normal browser; no authentication",
+ "note": "Checked reference list of public plan images observed on the official page in a normal browser. Not a live fetch, not current availability, not every unit, and not proof of any user's exact unit.",
+ "plans": [
+  {
+   "name": "848 | Sx1 A",
+   "alt": "848 | Sx1 A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/124446/6a67a71e178d36.18571064450.png"
+  },
+  {
+   "name": "848 | Sx1 Balcony A",
+   "alt": "848 | Sx1 Balcony A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/124528/6a67a748615d41.43339194918.png"
+  },
+  {
+   "name": "808 | Sx1 Convertible A",
+   "alt": "808 | Sx1 Convertible A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/013439/6a67b2cf65e756.48699369425.png"
+  },
+  {
+   "name": "848 | 1x1 A",
+   "alt": "848 | 1x1 A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/02/12/040525/67ad2935627c91.05890816574.png"
+  },
+  {
+   "name": "848 | 1x1 Balcony A",
+   "alt": "848 | 1x1 Balcony A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/10/06/095756/68e3e704b353f5.49437903289.png"
+  },
+  {
+   "name": "848 | 1x1 Den A",
+   "alt": "848 | 1x1 Den A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/02/12/040651/67ad298b492ca4.48820976953.png"
+  },
+  {
+   "name": "848 | 1x1 Junior A",
+   "alt": "848 | 1x1 Junior A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/125646/6a67a9ee814df1.57059832270.png"
+  },
+  {
+   "name": "848 | 1x1 Junior Balcony A",
+   "alt": "848 | 1x1 Junior Balcony A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/014113/6a67b4598c7d84.65560063300.png"
+  },
+  {
+   "name": "848 | 1x1 Junior Den A",
+   "alt": "848 | 1x1 Junior Den A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/10/02/080950/6abfbb2e84d425.09529814241.png"
+  },
+  {
+   "name": "848 | 1x1 Junior Den Balcony A",
+   "alt": "848 | 1x1 Junior Den Balcony A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/12/17/034241/694331e0e57c90.06307583340.png"
+  },
+  {
+   "name": "848 | 1x1 Junior Select A",
+   "alt": "848 | 1x1 Junior Select A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/10/06/100351/68e3e8678ca2e7.52510858731.png"
+  },
+  {
+   "name": "848 | 2x2 A",
+   "alt": "848 | 2x2 A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/031607/6a67ca96e9a2c5.44095707969.png"
+  },
+  {
+   "name": "848 | 2x2 Balcony A",
+   "alt": "848 | 2x2 Balcony A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/10/06/100518/68e3e8be496267.16551779794.png"
+  },
+  {
+   "name": "848 | 2x2 Select A",
+   "alt": "848 | 2x2 Select A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/032332/6a67cc54344bb0.14459265919.png"
+  },
+  {
+   "name": "848 | 2x2 Balcony Select A",
+   "alt": "848 | 2x2 Balcony Select A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/030141/6a67c73585aa65.72691459931.png"
+  },
+  {
+   "name": "848 | 2x2 Den A",
+   "alt": "848 | 2x2 Den A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/030424/6a67c7d8442763.46894199839.png"
+  },
+  {
+   "name": "848 | 2x2 Den Balcony A",
+   "alt": "848 | 2x2 Den Balcony A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2025/12/17/034418/694332428af037.75821203353.png"
+  },
+  {
+   "name": "848 | 3x3 A",
+   "alt": "848 | 3x3 A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/10/02/081305/6abfbbf1107b90.77004805791.png"
+  },
+  {
+   "name": "848 | 3x3 Select A",
+   "alt": "848 | 3x3 Select A",
+   "url": "https://medialibrarycfo.entrata.com/10364/MLv3/4/22/2026/07/27/030800/6a67c8b08b1171.54713115425.png"
+  }
+ ]
+}

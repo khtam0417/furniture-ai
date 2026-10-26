@@ -1,0 +1,158 @@
+{
+  "_about": "Outline for report.html (12 printed letter pages, 8 sections in the required order) and slides.html (reveal.js, 9 slides). Prepared 2026-10-26 from the code and docs only. Every value marked NEED_ROOT_EVIDENCE must come from a real run, the usage ledger, a real user or a source the root checks; nothing here is measured or invented. Author: Ken Tam. Product name: Furniture AI.",
+  "author": "Ken Tam",
+  "product": "Furniture AI",
+  "repository": {
+    "url": "NEED_ROOT_EVIDENCE: GitHub repository URL",
+    "visibility": "NEED_ROOT_EVIDENCE: public | private (if private, write 'private repository' in BOTH report.html and slides.html and add GitHub user zlisto as a collaborator)",
+    "must_appear_in": ["report.html section 1", "slides.html slide 1"]
+  },
+  "canvas_submission": ["report.html", "slides.html", "optional 2-3 minute narrated demo video"],
+  "evidence_needed_from_root": [
+    "NEED_ROOT_EVIDENCE: screenshots of the live Archive 1-bedroom run (plan list, Read floor plan result, clean plan canvas, Arrange, Choose furniture with New only and $3,000, Final checklist, both downloads opened)",
+    "NEED_ROOT_EVIDENCE: usage ledger rows for that run (per call: kind, input tokens, cached input tokens, output tokens, web_search_calls, estimated cost) from GET /api/projects/{id}/usage or the SQLite usage table",
+    "NEED_ROOT_EVIDENCE: screenshot or test output of at least one defense stopping an attack or malfunction (for example the 422 whole-budget refusal, the SSRF tests, the injected-instruction test, the session-allowance pause)",
+    "NEED_ROOT_EVIDENCE: the real pilot user's quote, task time or before/after measure, with permission (no pilot is claimed until it happens)",
+    "NEED_ROOT_EVIDENCE: sourced public numbers for Motivation and Impact (each with a URL and access date)",
+    "NEED_ROOT_EVIDENCE: final test totals from the frozen version (backend pytest, frontend tests, typecheck/build)"
+  ],
+  "report_pages": [
+    {
+      "page": 1,
+      "section": "1. Title + links",
+      "content": [
+        "Furniture AI: furnish the apartment you actually rent, from its real floor plan to one checked shopping list.",
+        "Ken Tam; solo final project.",
+        "Repository: NEED_ROOT_EVIDENCE (URL; 'private repository' label if private). Online app: none (runs locally from a fresh clone; see README quick start).",
+        "One sentence: reads your building's published floor plan, lays out draft furniture in the rooms it finds, and fills each piece with a real, dated, sourced product within your budget, ending in a printable checklist and spreadsheet.",
+        "Small hero screenshot: NEED_ROOT_EVIDENCE (clean plan canvas with furniture)."
+      ]
+    },
+    {
+      "page": 2,
+      "section": "2. Motivation",
+      "content": [
+        "Who: a renter moving into an unfurnished apartment (the author's own move to The Archive, New Haven, is the worked example) who has a budget, a floor plan image from the building's website, and no tape measure.",
+        "How it's done today: screenshots of the plan, store tabs, guessing sizes, spreadsheets, and repeated trips back to check whether a sofa fits; secondhand sites add stale and unverifiable listings.",
+        "Cost: time and returns from wrong sizes. NEED_ROOT_EVIDENCE: sourced figures (e.g. moving/furnishing cost or return rates) with URLs; otherwise state the friction qualitatively without numbers.",
+        "Why it matters: a wrong-size purchase is expensive to return; a plan-aware, budget-honest list prevents it."
+      ]
+    },
+    {
+      "page": 3,
+      "section": "3. What is new here",
+      "content": [
+        "Named alternatives (descriptions to be checked by root against each product's own site, with access dates): IKEA Kreativ and room planners such as Planner 5D or RoomSketcher (drawing/visualisation tools), paid design services such as Havenly, and general chatbots such as ChatGPT.",
+        "Honest difference: starts from the building's own published plan, keeps kitchen/bath/closets clear, places pieces only in rooms whose use is confirmed by evidence, and ties every product to a dated page it actually read (price, size, condition, stock) under one hard budget. A chatbot can suggest furniture but doesn't read the plan into geometry, verify pages, or enforce a budget in code.",
+        "What it does NOT do: no 3D render, no purchases, no measured survey; fit is an estimate from printed sizes.",
+        "Comparison table: alternative | starts from your plan | real verified products | enforced budget | sources shown."
+      ]
+    },
+    {
+      "page": 4,
+      "section": "4. The agents (roles, tools, diagram)",
+      "content": [
+        "Diagram: browser -> FastAPI orchestrator (plain Python) -> four typed PydanticAI agents + one web-research call, all gpt-6-luna via the course Portkey Responses API; deterministic code for fetching, validation, placement, budget and the checklist; SQLite + content-addressed originals.",
+        "Plan Map agent (design_api.planmap_agent, prompt plan-map-v4-crops): input = one plan image plus two framed crops in ONE call; output = typed PlanMapOutput (room polygons, labels, printed sizes, walls, openings, fixtures). Tools: none (structured output only). Code validates geometry and decides each room's use (confirmed / uncertain / conflict).",
+        "Room Evidence agent (ai.room_agent, room-evidence-v5-geometry-shape): photos -> typed PhotoAnalysisOutput; photo geometry stays an unverified estimate. Tools: none. Used by the single-room flow.",
+        "Preference Edit agent (ai.pref_agent, preference-patch-v3): free text -> typed PreferencePatch applied by code. Tools: none.",
+        "Design Helper agent (design_api.assistant_agent, design-assistant-v1): answers questions and proposes typed changes; nothing changes until the user ticks and applies; never sees address, unit, images or links. Tools: none.",
+        "Web research call (research.py, furniture-products-v4-eligible-sites): Responses API with the built-in web_search tool only (<= 2 tool calls, low context, <= 1800 output tokens); results are leads filtered to approved stores/marketplaces and verified by reading each page.",
+        "Model choice: gpt-6-luna is the only model allowed on the course key; vision plus structured output plus built-in web search cover every need, so no second model."
+      ]
+    },
+    {
+      "page": 5,
+      "section": "4. The agents (one real run, part 1)",
+      "content": [
+        "Step-by-step real run on The Archive 1-bedroom plan, New only, $3,000 budget (NEED_ROOT_EVIDENCE: screenshots for each step and the ledger row ids).",
+        "Step 1: place created, building chosen from the checked list (no AI, no search).",
+        "Step 2: plan chosen; Read floor plan = one Plan Map call (NEED_ROOT_EVIDENCE: tokens). Show the AI map and the clean code-drawn plan, with rooms marked confirmed/uncertain.",
+        "Step 3: Arrange your space: deterministic arrangements; pieces only in usable rooms; anything without a valid spot goes to Not placed."
+      ]
+    },
+    {
+      "page": 6,
+      "section": "4. The agents (one real run, part 2)",
+      "content": [
+        "Step 4: Choose furniture: Find furniture = one web-research call per piece type (NEED_ROOT_EVIDENCE: number of calls and pages checked), then page checks two at a time; only options that fit and are within the piece's share and the whole budget are recommended.",
+        "Step 5: Choose for me / manual choices; the server refuses anything over the remaining item budget.",
+        "Step 6: Final checklist and both downloads (printable HTML and Excel) (NEED_ROOT_EVIDENCE: screenshots).",
+        "What each agent did vs what code did, in one table for this run."
+      ]
+    },
+    {
+      "page": 7,
+      "section": "5. Tokenomics (measured)",
+      "content": [
+        "Table from the usage ledger for the real run: per call kind (plan_map, web_research furniture, design_assistant if used): input tokens, cached input tokens, output tokens, web_search_calls, estimated cost. NEED_ROOT_EVIDENCE: all numbers.",
+        "Typical run cost = sum of the run's ledger rows (NEED_ROOT_EVIDENCE). Rate table and search fee from usage.py (state its date and that costs are estimates from returned usage, not invoices).",
+        "Per user per month: NEED_ROOT_EVIDENCE: stated assumption (e.g. runs per user per month) times measured run cost; scale to 100 and 10,000 users, showing the formula."
+      ]
+    },
+    {
+      "page": 8,
+      "section": "5. Tokenomics (cost controls and tradeoffs)",
+      "content": [
+        "Cost controls actually built: saved plan maps reused by input hash + prompt version; identical searches share one in-flight request and a 10-minute cache; pieces of the same type and size share one search; the new-item search is skipped when 3+ saved options already fit the budget; no automatic second search (Search more is explicit); refusing marketplaces are skipped without spending a search; session $2.00, daily $3.00 and 12-requests-per-10-minutes limits, reserved atomically before each call.",
+        "Quality tradeoff evidence: offline simulated benchmark (docs/evidence/offline_search_benchmark.md: 0.594 s serial vs 0.372 s with two parallel checks, identical decisions; SIMULATED, not live). Live tradeoff: fewer checks per search can miss supply; NEED_ROOT_EVIDENCE: any live comparison, or state that none was measured."
+      ]
+    },
+    {
+      "page": 9,
+      "section": "6. Safety (risks and defenses)",
+      "content": [
+        "Attacks: prompt injection in web pages, listings and photo text (treated as untrusted evidence, never instructions; listings are parsed deterministically and never sent to the model); SSRF through user or search URLs (SafeFetcher: public IPs only, DNS pinning, every redirect hop checked, size/type caps); unknown or private sellers (hard allowlist: Amazon, Article, IKEA, Target for new; AptDeco, Chairish, eBay, Facebook Marketplace items, Craigslist posts for used).",
+        "Malfunction: invented geometry or facts (typed outputs validated by code; missing facts stay unknown; unreadable plans get no automatic placement; bath fixtures in a 'bedroom' = conflict, no bed); wrong actions (helper proposals need explicit apply; versions are append-only with optimistic concurrency); loops (one call per request, bounded retries, bounded page checks).",
+        "Overspending (money): the server refuses any product over the remaining item budget (exact figures in the message); over-budget earlier choices are flagged, never silently deleted. Overspending (tokens): atomic reservations against session/daily/rate limits; a cap pauses with a plain message."
+      ]
+    },
+    {
+      "page": 10,
+      "section": "6. Safety (defenses shown working)",
+      "content": [
+        "Show at least one defense working (NEED_ROOT_EVIDENCE: screenshot and/or test output). Candidate tests (offline, deterministic):",
+        "backend/tests/test_domain.py::test_injected_instruction_cannot_change_budget_or_policy",
+        "backend/tests/test_api.py::test_listing_import_injection_condition_and_raw_source",
+        "backend/tests/test_env_and_fetch.py::test_private_and_unsafe_urls_blocked, ::test_dns_to_private_blocked, ::test_redirect_to_metadata_blocked, ::test_redirect_to_host_rebinding_to_private_blocked, ::test_public_status_never_contains_key",
+        "backend/tests/test_source_boundary.py::test_unknown_sites_are_refused_without_any_network_access, ::test_a_store_redirect_to_an_unknown_site_is_never_contacted",
+        "backend/tests/test_resale_trust.py::test_a_redirect_to_an_unapproved_site_is_refused_before_connecting",
+        "backend/tests/test_budget_selection.py::test_a_14500_sofa_on_a_3000_budget_is_never_recommended_selectable_or_accepted, ::test_earlier_over_budget_choices_are_kept_flagged_searchable_and_repairable_one_at_a_time",
+        "backend/tests/test_limits_and_speed.py::test_reserved_and_settled_costs_count_and_the_boundary_is_atomic, ::test_concurrent_identical_searches_share_one_ai_request_and_the_cache_expires",
+        "backend/tests/test_domain.py::test_ledger_limits_and_concurrency; backend/tests/test_find_furniture.py::test_rate_limit_pauses_the_group_with_a_clear_message",
+        "backend/tests/test_design_assistant.py::test_the_model_sees_the_design_but_not_the_address_unit_or_sources, ::test_proposed_changes_apply_exactly_once_after_review",
+        "backend/tests/test_supply_and_review.py::test_when_every_selected_marketplace_refuses_nothing_is_searched_or_checked",
+        "Source provenance: originals immutable and content-addressed; every derivative has parent id, hash, method/model/prompt version and timestamp; checklist rows link only to approved sources."
+      ]
+    },
+    {
+      "page": 11,
+      "section": "7. Impact",
+      "content": [
+        "Real user: NEED_ROOT_EVIDENCE (the pilot the root is asking the user to run now: who, task, time taken with the app vs the usual way, quote, screenshot). If no pilot happens, say so plainly; no outside pilot is claimed.",
+        "The author's own run: NEED_ROOT_EVIDENCE (time from plan to checklist; items found within $3,000; pieces left missing and why).",
+        "Sourced context numbers: NEED_ROOT_EVIDENCE (each with a URL and access date).",
+        "Evidence labels: real run / offline test / estimate, kept separate."
+      ]
+    },
+    {
+      "page": 12,
+      "section": "8. Limits + next steps",
+      "content": [
+        "Limits: the plan map is an AI reading of a picture, not a survey; fit is approximate; marketing/3D plans may be unreadable (then no automatic placement). Secondhand supply is thin: eBay answers HTTP 403, AptDeco often shows robot checks, Chairish is readable but often above budget; the app never bypasses them. The checked catalog is small (IKEA, Article, one Amazon item) and prices/stock may change. Local only, no hosting; no purchases.",
+        "Next month: more store adapters and sizes; a measured fit check with the user's own wall lengths; a hosted version with accounts; a real multi-user pilot with timing; better plan reading for 3D renders."
+      ]
+    }
+  ],
+  "slides": [
+    {"n": 1, "title": "Furniture AI", "content": ["Ken Tam", "One line: from your building's floor plan to one checked shopping list within your budget.", "Repository: NEED_ROOT_EVIDENCE (URL; 'private repository' if private)."]},
+    {"n": 2, "title": "The problem and who has it", "content": ["A renter with a plan image, a budget and no tape measure.", "Today: tabs, guesses, returns. NEED_ROOT_EVIDENCE: one sourced number or none."]},
+    {"n": 3, "title": "What is new", "content": ["Compared with room planners, design services and chatbots (names as on report page 3).", "Reads your real plan; verified dated products; budget enforced in code; nothing invented."]},
+    {"n": 4, "title": "How the agents work", "content": ["Diagram: orchestrator, four typed gpt-6-luna agents (plan map, room evidence, preference edit, design helper), one web-research call with built-in web search, deterministic code for everything that must be exact."]},
+    {"n": 5, "title": "Demo: The Archive 1-bedroom, New only, $3,000", "content": ["NEED_ROOT_EVIDENCE: 3-4 embedded screenshots (plan reading, arrangement, choices, checklist)."]},
+    {"n": 6, "title": "Cost to run", "content": ["NEED_ROOT_EVIDENCE: measured tokens and estimated cost per run from the ledger; per user per month; 100 and 10,000 users.", "Cost controls: cache/reuse, shared in-flight searches, explicit Search more, caps."]},
+    {"n": 7, "title": "Safety", "content": ["Untrusted pages, SSRF defenses, source allowlist, whole-budget refusal, token caps.", "NEED_ROOT_EVIDENCE: one screenshot or test output of a defense working."]},
+    {"n": 8, "title": "Impact: the numbers", "content": ["NEED_ROOT_EVIDENCE: pilot user result or the author's own measured run; labelled by evidence type."]},
+    {"n": 9, "title": "Limits and what's next", "content": ["Approximate fit; thin secondhand supply (403s and robot checks never bypassed); small catalog; local only.", "Next: more stores, measured fit, hosted pilot."]}
+  ]
+}

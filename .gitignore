@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.DS_Store
+storage/
+output/private/
+# Raw retailer/property HTML snapshots: kept locally as evidence (sha256 recorded in products.json), not redistributed.
+data/catalog_raw/
+*.log
+# Local-only working files (never part of the submission repository; see tools/package_submission.py).
+.scratch/
+prompts/
+*.sqlite3
+.claude/

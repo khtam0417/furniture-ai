@@ -1,0 +1,140 @@
+{
+ "property": "The Audubon (New Haven, CT)",
+ "name": "The Audubon",
+ "aliases": [
+  "the audubon",
+  "audubon",
+  "the audubon new haven",
+  "audubon apartments"
+ ],
+ "city": "New Haven",
+ "state": "CT",
+ "zip": "06511",
+ "location_source": "City and ZIP as printed in the official plan image alt text; street address not recorded.",
+ "hosts": [
+  "www.theaudubonapts.com",
+  "theaudubonapts.com"
+ ],
+ "path_pattern": "^/(?:floorplans(?:/(?!\\.+(?:/|$))[A-Za-z0-9._-]+)*)?/?$",
+ "website": "https://www.theaudubonapts.com/floorplans",
+ "address": null,
+ "image_hosts": [
+  "resource.rentcafe.com"
+ ],
+ "source_page": "https://www.theaudubonapts.com/floorplans",
+ "observed_at": "2026-10-26T01:26:21.716Z",
+ "method": "Official page opened in browser; plan names and URLs read from UI-backed DOM. Explicitly referenced uncropped image preferred. Not current unit availability.",
+ "note": "Checked reference list of public plan images observed on the official page in a normal browser. Not a live fetch, not current availability, not every unit, and not proof of any user's exact unit.",
+ "plans": [
+  {
+   "name": "Studio-S1 335 Orange",
+   "alt": "StudioS13 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_studios1335orange_2_floorplan.png"
+  },
+  {
+   "name": "Studio-S2.1 367 Orange",
+   "alt": "StudioS21 Floor Plan at The Audubon New Haven, New Haven, Connecticut",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_studios21367orange_2_floorplan.png"
+  },
+  {
+   "name": "Studio-S3.MT 367 Orange",
+   "alt": "StudioS3M Floor Plan at The Audubon New Haven, New Haven",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_studios3mt367orange_2_floorplan.png"
+  },
+  {
+   "name": "Studio-S2 - 29 Audubon Street",
+   "alt": "Studio S2 Floor Plan at The Audubon New Haven, New Haven, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_studios229audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "1 Bed/1 Bath-A1 335 Orange",
+   "alt": "1Bed1BathA1 Floor Plan at The Audubon New Haven, New Haven, CT, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha11335orange_2_floorplan.png"
+  },
+  {
+   "name": "1 Bed/1 Bath-A2a 367 Orange",
+   "alt": "1 Bed 1Bath A2a Floor Plan at The Audubon New Haven, Connecticut",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha2a367orange_2_floorplan.png"
+  },
+  {
+   "name": "1 Bed/1 Bath-A1 - 29 Audubon Street",
+   "alt": "1 Bed 1Bath A1 Floor Plan at The Audubon New Haven, New Haven, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha129audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "1 Bed/1 Bath-A5 - 29 Audubon Street",
+   "alt": "1 Bed 1Bath A5 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha529audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "1 Bed/1 Bath-A2 335 Orange",
+   "alt": "1 Bed 1Bath A2 Floor Plan at The Audubon New Haven, New Haven, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha2335orange_2_floorplan.png"
+  },
+  {
+   "name": "1 Bed/1 Bath-A1.1 335 Orange",
+   "alt": "1 Bed 1Bath A1 Floor Plan at The Audubon New Haven, New Haven, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha11335orange_2_floorplan(1).png"
+  },
+  {
+   "name": "1 Bed/1 Bath-A3a 367 Orange",
+   "alt": "1 Bed 1Bath A3a Floor Plan at The Audubon New Haven, New Haven",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha3a367orange_2_floorplan.png"
+  },
+  {
+   "name": "1 Bed/1 Bath-A11a 367 Orange",
+   "alt": "1 Bed 1Bath A11a Floor Plan at The Audubon New Haven, New Haven, CT",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_1bed1batha11a367orange_2_floorplan.png"
+  },
+  {
+   "name": "2 Bed/2_5 Bath TH-2B - 29 Audubon Street",
+   "alt": "2 Bed 2.5 TH Bath Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_new-haven_audubonnewhaven_p1817959_2bed25bathth2b29audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "2 Bed/2 Bath-B2.MT 367 Orange",
+   "alt": "2 Bed 2 Bath B2M Floor Plan at The Audubon New Haven, New Haven, CT, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_2bed2bathb2mt367orange_2_floorplan.png"
+  },
+  {
+   "name": "2 Bed/1.5 Bath-A6 367 Orange 2 Bed / 1.5",
+   "alt": "2 Bed 1.5 Bath A6 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_2bed15batha6367orange_2_floorplan.png"
+  },
+  {
+   "name": "2 Bed/2 Bath-B2 - 29 Audubon Street",
+   "alt": "2 Bed 2 Bath B2 Floor Plan at The Audubon New Haven, Connecticut",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_2bed2bathb229audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "2 Bed/2 Bath-B3 - 29 Audubon Street",
+   "alt": "2 Bed 2 Bath B3 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_2bed2bathb329audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "2 Bed/2 Bath-F4 - 29 Audubon Street",
+   "alt": "2 Bed 2 Bath F4 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_2bed2bathf429audubonstreet_2_floorplan.jpg"
+  },
+  {
+   "name": "3 Bed/2 Bath-C1.MT 367 Orange",
+   "alt": "3 Bed 2 Bath C1M Floor Plan at The Audubon New Haven, New Haven, CT",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_3bed2bathc1mt367orange_2_floorplan.png"
+  },
+  {
+   "name": "2 Bed/2 Bath-B5.1",
+   "alt": "B5-1 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/audubon_b5-1_1,030.png"
+  },
+  {
+   "name": "Studio-S2",
+   "alt": "S2 Floor Plan at The Audubon New Haven, Connecticut, 06511",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/audubon_s2_490.png"
+  },
+  {
+   "name": "3 Bed/2 Bath-C1 367 Orange",
+   "alt": "3 Bed 2 Bath C1 Floor Plan at The Audubon New Haven, New Haven, Connecticut",
+   "url": "https://resource.rentcafe.com/image/upload/q_auto,f_auto,c_limit,w_576/s3/2/119530/ct_newhaven_audubonnewhaven_p1817959_3bed2bathc1367orange_2_floorplan.png"
+  }
+ ]
+}

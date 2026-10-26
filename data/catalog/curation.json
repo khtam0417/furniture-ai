@@ -1,0 +1,507 @@
+{
+ "about": "AI-assisted editorial curation list for tools/build_catalog.py, authored by Claude Code during development on 2026-10-24; rows have NOT all been reviewed by a human. URLs were discovered from the retailers' own category pages. 'curator_tags' are editorial style/trait judgments from the product name and finish, not retailer facts. Prices, dimensions, availability and inclusions come ONLY from the fetched page.",
+ "items": [
+  {
+   "url": "https://www.ikea.com/us/en/p/tarva-bed-frame-pine-luroey-s29007794/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "rustic",
+    "warm_wood",
+    "scandinavian"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/malm-bed-frame-dark-brown-veneer-luroey-s49574365/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "modern",
+    "dark",
+    "minimal"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/brimnes-bed-frame-with-storage-white-luroey-s09069764/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/vihals-bed-frame-white-30602448/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "minimal",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/songesand-bed-frame-brown-s89241044/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "traditional",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/gladstad-upholstered-bed-frame-kabusa-light-gray-00490466/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "modern",
+    "soft",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/tonstad-bed-frame-oak-veneer-20603622/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.target.com/p/casepiece-metal-platform-bed/-/A-92300087",
+   "category": "bed_frame",
+   "curator_tags": [
+    "industrial",
+    "dark",
+    "minimal"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/vevelstad-bed-frame-white-10518276/",
+   "category": "bed_frame",
+   "curator_tags": [
+    "minimal",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/valevag-pocket-spring-mattress-medium-firm-white-50511857/",
+   "category": "mattress",
+   "curator_tags": [
+    "comfort"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/asvang-foam-mattress-medium-firm-white-20481404/",
+   "category": "mattress",
+   "curator_tags": [
+    "comfort"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/abrotten-foam-mattress-medium-firm-white-40481686/",
+   "category": "mattress",
+   "curator_tags": []
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/agotnes-foam-mattress-firm-light-blue-80480878/",
+   "category": "mattress",
+   "curator_tags": []
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/friheten-sleeper-sofa-skiftebo-dark-gray-90341151/",
+   "category": "sofa_bed",
+   "curator_tags": [
+    "modern",
+    "dark"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/lindakra-sleeper-sofa-vissle-dark-gray-60582613/",
+   "category": "sofa_bed",
+   "curator_tags": [
+    "modern",
+    "dark",
+    "minimal"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/grunnarp-sleeper-sofa-gunnared-beige-70585079/",
+   "category": "sofa_bed",
+   "curator_tags": [
+    "soft",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/brimnes-daybed-frame-with-2-drawers-white-40228708/",
+   "category": "daybed",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/micke-desk-white-80213074/",
+   "category": "desk",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "compact"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/brytning-desk-white-80609744/",
+   "category": "desk",
+   "curator_tags": [
+    "minimal",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/tonstad-desk-oak-veneer-30538198/",
+   "category": "desk",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/kallax-desk-black-brown-00582442/",
+   "category": "desk",
+   "curator_tags": [
+    "modern",
+    "dark",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-50588804/",
+   "category": "desk_chair",
+   "curator_tags": [
+    "modern",
+    "dark",
+    "comfort"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/centerhalv-office-chair-black-10601124/",
+   "category": "desk_chair",
+   "curator_tags": [
+    "minimal",
+    "dark"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/brimnes-4-drawer-dresser-white-20572833/",
+   "category": "dresser",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/rast-3-drawer-dresser-pine-70582165/",
+   "category": "dresser",
+   "curator_tags": [
+    "rustic",
+    "warm_wood",
+    "storage",
+    "compact"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/hemnes-6-drawer-dresser-white-stain-00576196/",
+   "category": "dresser",
+   "curator_tags": [
+    "traditional",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/lillberget-3-drawer-dresser-white-50639851/",
+   "category": "dresser",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage",
+    "compact"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/tarva-nightstand-pine-50219609/",
+   "category": "nightstand",
+   "curator_tags": [
+    "rustic",
+    "warm_wood",
+    "compact"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/brimnes-nightstand-white-10234942/",
+   "category": "nightstand",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "compact"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/tonstad-nightstand-oak-veneer-80489322/",
+   "category": "nightstand",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/brimnes-wardrobe-with-2-doors-white-30574799/",
+   "category": "wardrobe",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/vihals-wardrobe-with-2-doors-white-20483257/",
+   "category": "wardrobe",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/billy-bookcase-white-10522037/",
+   "category": "bookcase",
+   "curator_tags": [
+    "minimal",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/hemnes-bookcase-white-stain-90371765/",
+   "category": "bookcase",
+   "curator_tags": [
+    "traditional",
+    "light_neutral",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/lack-coffee-table-white-80449901/",
+   "category": "coffee_table",
+   "curator_tags": [
+    "minimal",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/borgeby-coffee-table-birch-veneer-70389356/",
+   "category": "coffee_table",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.ikea.com/us/en/p/tonstad-coffee-table-oak-veneer-10489311/",
+   "category": "coffee_table",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/25637/basi-queen-bed-frame-walnut",
+   "category": "bed_frame",
+   "curator_tags": [
+    "minimal",
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/25641/basi-full-bed-frame-oak",
+   "category": "bed_frame",
+   "curator_tags": [
+    "minimal",
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/26888/cooper-queen-low-profile-bed-natural-oak",
+   "category": "bed_frame",
+   "curator_tags": [
+    "mid_century",
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/21541/tessu-queen-low-profile-upholstered-bed-glaze-gray",
+   "category": "bed_frame",
+   "curator_tags": [
+    "modern",
+    "soft"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/24991/calabri-queen-upholstered-bed-ivory-wool-boucle",
+   "category": "bed_frame",
+   "curator_tags": [
+    "modern",
+    "soft",
+    "light_neutral"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/24409/nera-1-drawer-nightstand-walnut",
+   "category": "nightstand",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/24421/lenia-2-drawer-nightstand-white-oak",
+   "category": "nightstand",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/24463/kouva-2-drawer-nightstand-natural-oak",
+   "category": "nightstand",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/22380/nera-5-drawer-chest-walnut",
+   "category": "dresser",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/22368/lenia-6-drawer-double-dresser-white-oak",
+   "category": "dresser",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/26892/cooper-6-drawer-double-dresser-natural-oak",
+   "category": "dresser",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/17954/deca-48-desk-oak",
+   "category": "desk",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/25256/kacey-51-desk-white-oak",
+   "category": "desk",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/18766/newberry-43-25-desk-walnut",
+   "category": "desk",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood",
+    "compact"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/25356/ceni-83-sofa-quarry-gray",
+   "category": "sofa",
+   "curator_tags": [
+    "mid_century",
+    "warm_wood",
+    "soft"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/21205/burrard-83-5-sofa-seasalt-gray",
+   "category": "sofa",
+   "curator_tags": [
+    "modern",
+    "light_neutral",
+    "soft",
+    "comfort"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/22571/timber-90-sofa-pebble-gray",
+   "category": "sofa",
+   "curator_tags": [
+    "modern",
+    "soft",
+    "comfort"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/24802/sven-88-tufted-sofa-ratine-buff",
+   "category": "sofa",
+   "curator_tags": [
+    "mid_century",
+    "light_neutral",
+    "soft"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/19596/braam-75-sofa-bed-light-miller-gray",
+   "category": "sofa_bed",
+   "curator_tags": [
+    "modern",
+    "light_neutral",
+    "soft"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/22239/lenia-53-5-oval-coffee-table-white-oak",
+   "category": "coffee_table",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood"
+   ]
+  },
+  {
+   "url": "https://www.article.com/product/23359/lenia-46-storage-coffee-table-white-oak",
+   "category": "coffee_table",
+   "curator_tags": [
+    "scandinavian",
+    "warm_wood",
+    "storage"
+   ]
+  },
+  {
+   "url": "https://www.amazon.com/dp/B006MIUM20",
+   "category": "bed_frame",
+   "curator_tags": [
+    "minimal",
+    "industrial",
+    "dark"
+   ]
+  }
+ ]
+}
