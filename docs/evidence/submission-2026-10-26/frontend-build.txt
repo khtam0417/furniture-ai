@@ -1,0 +1,14 @@
+
+> furnishai-frontend@0.1.0 build
+> tsc --noEmit -p tsconfig.json && vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 53 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.53 kB │ gzip:   0.33 kB
+dist/assets/index-C-kHZrzv.css   39.68 kB │ gzip:   8.69 kB
+dist/assets/index-DktQLhLE.js   447.08 kB │ gzip: 132.02 kB
+
+✓ built in 76ms

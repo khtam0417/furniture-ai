@@ -1,0 +1,35 @@
+{
+  "reviewed_at": "2026-10-26",
+  "pilot": {
+    "name": "Shirley Xu",
+    "cohort": "Blue cohort",
+    "source": "Reported by Ken Tam in this conversation on October 26, 2026; not independently observed by the submission assistant.",
+    "scenario": "Her own house, using a 2D floor plan with dimensions.",
+    "outcome": "Ken reports that she successfully found furniture using the app.",
+    "feedback_paraphrase": "Some recommendations were useful; she had difficulty finding specific pieces she liked and preferred outside alternatives for some items.",
+    "limitations": "One informal pilot. No independently recorded timing, purchase, spend saving, task log, or verbatim tester quotation. Do not invent any."
+  },
+  "competitors": [
+    {
+      "name": "IKEA Kreativ",
+      "url": "https://www.ikea.com/us/en/customer-service/knowledge/articles/982f84a7-5941-45a8-a34a-1727c57dcc7f.html",
+      "facts": "Free room designer supports room photos, scans, manual dimensions and prebuilt rooms; erases existing furniture and designs on the real room."
+    },
+    {
+      "name": "IKEA Kreativ",
+      "url": "https://www.ingka.com/newsroom/ikea-launches-new-ai-powered-experience-empowering-customers-to-create-lifelike-room-designs/",
+      "facts": "Official description includes erasing existing furniture and positioning/swapping IKEA furnishings."
+    },
+    {
+      "name": "Planner 5D",
+      "url": "https://support.planner5d.com/en/articles/14434484-how-to-upload-a-floor-plan",
+      "facts": "AI recognition converts a 2D plan into an editable 3D project on paid plans. Documentation recommends bird's-eye view and dimensions, warns renders/elevations cannot be properly recreated."
+    },
+    {
+      "name": "Cona",
+      "url": "https://cona.design/room-planner",
+      "facts": "First-party page directly verified October 26: drawing/upload/scanning, real brands IKEA CB2 Herman Miller with prices and purchase links, browser 2D/3D, AI auto-furnish; asks for one real measurement for scale. Close overlap; no superiority claim or hands-on comparative test."
+    }
+  ],
+  "novelty_position": "A useful combination for renters: public building-plan discovery, explicit uncertainty/provenance, budget-aware choices from several retailers, editable arrangements and portable checklist. Not first AI room planner, not superior or exclusive feature coverage proven by competitive testing. No hands-on competitor benchmark conducted."
+}

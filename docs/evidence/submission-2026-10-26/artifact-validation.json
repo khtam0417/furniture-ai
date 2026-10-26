@@ -1,0 +1,15 @@
+{
+  "report.html": {
+    "sections": 12,
+    "embedded_images": 7,
+    "external_script_or_css_dependencies": 0,
+    "bytes": 735010
+  },
+  "slides.html": {
+    "sections": 9,
+    "embedded_images": 4,
+    "external_script_or_css_dependencies": 0,
+    "bytes": 523728
+  },
+  "visual_check": "All12reportsections measured816x1056CSSpixels at desktop Letter layout, nohorizontaloverflow;diagram and selected screenshot/tablepages inspected. Nine-slide reveal deck reviewed."
+}

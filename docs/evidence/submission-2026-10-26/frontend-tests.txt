@@ -1,0 +1,51 @@
+
+> furnishai-frontend@0.1.0 test
+> node --test tests/*.test.ts
+
+✔ helper replies split navigation from reviewable changes, keeping the server's indexes (0.940667ms)
+✔ draft beds use the bed size; a chosen product uses its listed size and is never shrunk (0.674584ms)
+✔ piece names say the bed size only for beds and mattresses (0.088667ms)
+✔ every piece type is in exactly one add-menu group, with a name and a typical draft size (0.122292ms)
+✔ missing product facts read in plain words (0.054375ms)
+✔ over-budget options are explained, never 'ready'; a type with 1-2 ready options can be searched more (1.552791ms)
+✔ marketplaces that refused automated reading are named, never shown as an empty search (0.214125ms)
+✔ the Choose step says what it shops for, and explains an unrecognized bedroom without guessing one (0.221042ms)
+✔ one click searches every type once; 'Search more' is offered only for unmatched, not-yet-refined types (0.100209ms)
+✔ changed search settings never refine or continue an old query: a fresh first pass runs instead (0.153125ms)
+✔ a 'Search more' run keeps earlier statuses visible and a paused one leaves the rest for Continue (0.253958ms)
+✔ options read from a public page copy say so, with the date and no freshness promise (0.1065ms)
+✔ runs groups one at a time, up to the limit, and leaves the rest for Continue (0.148958ms)
+✔ a failing group is recorded and the others still run (0.145083ms)
+✔ stop ends after the current group (0.164292ms)
+✔ each branch is described honestly (0.080625ms)
+✔ the AI request limit pauses the queue with its message and keeps the rest continuable (0.094959ms)
+✔ option cards separate budget from fit and never call the whole remainder this piece's (21.226375ms)
+✔ fit is its own line: where it is, moved within the room, or not fitting (0.12125ms)
+✔ Choose for me waits for the finding queue and coverage counts pieces, not verified pages (0.083583ms)
+✔ each piece row shows the queue's live state (0.036916ms)
+✔ leaving the step stops after the current group; returning doesn't resume; Continue runs only the rest (0.154666ms)
+✔ found results belong to the saved search settings, not to the design version (0.090708ms)
+✔ a piece's options line follows the active New/Secondhand filter (0.061ms)
+✔ a reader recovery leads with what was found; the refusal is context, not the headline (0.65675ms)
+✔ third-party listing plans are never presented as official (0.119625ms)
+✔ when every route fails the explanation is honest and names what was tried (0.167584ms)
+✔ checked and live origins keep their existing wording (0.063958ms)
+✔ plan fit badge: confirmed room with an unverified part says placement needs review, never 'room not confirmed' (0.457792ms)
+✔ plan fit badge: estimates and missing sizes get friendly statuses; passing sizes never claim a guaranteed fit (0.184958ms)
+✔ plan names are plain for new and older saved titles (0.081583ms)
+✔ polite change requests are changes (0.598667ms)
+✔ genuine questions never change anything (0.601417ms)
+✔ item fit wording: known product in an unsized room is 'Fit not assessed'; unknown product says so (0.176791ms)
+✔ a budget the helper saved reaches the form, and the next search uses it (0.612958ms)
+✔ the user's own unsaved edits are kept and stay unsaved (0.86475ms)
+✔ downloads are tied to the current design version (1.106625ms)
+✔ the appearance choice persists and defaults to System (0.619708ms)
+✔ System follows the device; Light and Dark override it (0.374666ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 112.080709

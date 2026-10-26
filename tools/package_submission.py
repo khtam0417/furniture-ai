@@ -37,12 +37,15 @@ FILES = [
     # list, and the browser-observed public plan-reference lists (URLs and names only, no image bytes).
     "data/catalog/products.json", "data/catalog/curation.json",
     "data/property_refs/theaudubonapts.json", "data/property_refs/thearchiveapts.json",
-    # Docs a reviewer needs (course deliverables report.html / slides.html are submitted on Canvas, not here).
-    "docs/STATUS.md", "docs/LECTURE_MAPPING.md", "docs/COURSE_REQUIREMENTS.md", "docs/ACCEPTANCE_TESTS.md",
-    "docs/evidence/offline_search_benchmark.md", "docs/submission_outline.json",
-    # Small tools documented in the README (the catalog tools need raw snapshots that are NOT distributed).
-    "tools/package_submission.py", "tools/http_smoke.py", "tools/smoke_demo.py", "tools/build_catalog.py",
-    "tools/snapshot_page.py", "tools/import_property_refs.py",
+    # Docs a reviewer needs. Internal working files (the long development log docs/STATUS.md and the draft
+    # docs/submission_outline.json) stay local; the final report/slides are copied to docs/submission/ by hand after
+    # validation.
+    "docs/LECTURE_MAPPING.md", "docs/COURSE_REQUIREMENTS.md", "docs/ACCEPTANCE_TESTS.md",
+    "docs/evidence/offline_search_benchmark.md",
+    # Small tools documented in the README (the catalog tools need raw snapshots that are NOT distributed; the
+    # deliverables builder needs evidence files that are not packaged, and isn't needed to run the app).
+    "tools/package_submission.py", "tools/build_submission.py", "tools/http_smoke.py", "tools/smoke_demo.py",
+    "tools/build_catalog.py", "tools/snapshot_page.py", "tools/import_property_refs.py",
 ]
 # Directory rules: (directory, allowed suffixes, recursive).
 TREES = [

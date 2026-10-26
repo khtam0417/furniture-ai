@@ -1,0 +1,12 @@
+{
+  "performed_at": "2026-10-26T20:24:00Z",
+  "source": "Observed original public marketing plan",
+  "ui_actions": [
+    "Dining->Living",
+    "Balcony->Closet",
+    "Second Bath->Laundry"
+  ],
+  "result": "Saved corrected map versions; original AI reading kept; allsixchosenproductsretained",
+  "scope": "Room-use corrections only; no measured geometry validation. Kitchen/circulation area remains Hall/kept-clear.",
+  "screenshot": "07-reviewed-map.jpg"
+}

@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/khtam0417/furniture-ai",
+  "fresh_clone": true,
+  "command": "env -u PORTKEY_API_KEY -u OPENAI_API_KEY PYTHON=python3.12 ./run.sh --no-live --port 4092",
+  "started_at": "2026-10-26T20:14:34Z",
+  "first_confirmed_http_status_by": "2026-10-26T20:21:55Z",
+  "setup_upper_bound_minutes": 7.35,
+  "configuration": "Harmless fake key only in immediate parent .env; status reported key_present=true,key_source=parent .env,live_ai_available=false,live_disabled_by_setting=true. No real model request in this clone test. Real paid API demo ran separately on4090.",
+  "backend_tests": "479 passed,1 skipped,1 warning in22.08seconds",
+  "warning": "Expected decompression-bomb warning in image rejection test",
+  "frontend": "Packaged compiled build present; frontend source alsoincluded."
+}

@@ -1,0 +1,79 @@
+{
+  "scenario": "Archive 848 | 1x1 A, new only, modern, delivery, $3000 budget,10% reserve",
+  "calls": [
+    {
+      "purpose": "plan_map",
+      "status": "ok",
+      "created_at": "2026-10-26T20:07:18+00:00",
+      "actual_usd": 0.0017133299999999999,
+      "input_tokens": 3775,
+      "cached_input_tokens": 1313,
+      "cache_write_tokens": null,
+      "output_tokens": 2908,
+      "web_search_calls": null,
+      "web_search_fee_usd": null,
+      "token_cost_usd": null,
+      "latency_s": 22.7
+    },
+    {
+      "purpose": "web_research_furniture",
+      "status": "ok",
+      "created_at": "2026-10-26T20:08:39+00:00",
+      "actual_usd": 0.03205496,
+      "input_tokens": 20885,
+      "cached_input_tokens": 4314,
+      "cache_write_tokens": 109,
+      "output_tokens": 704,
+      "web_search_calls": 3,
+      "web_search_fee_usd": 0.03,
+      "token_cost_usd": 0.00205497,
+      "latency_s": 10.14
+    },
+    {
+      "purpose": "web_research_furniture",
+      "status": "ok",
+      "created_at": "2026-10-26T20:08:54+00:00",
+      "actual_usd": 0.03206584,
+      "input_tokens": 21459,
+      "cached_input_tokens": 4314,
+      "cache_write_tokens": 108,
+      "output_tokens": 611,
+      "web_search_calls": 3,
+      "web_search_fee_usd": 0.03,
+      "token_cost_usd": 0.00206584,
+      "latency_s": 11.43
+    },
+    {
+      "purpose": "web_research_furniture",
+      "status": "ok",
+      "created_at": "2026-10-26T20:09:11+00:00",
+      "actual_usd": 0.03202734,
+      "input_tokens": 21489,
+      "cached_input_tokens": 4314,
+      "cache_write_tokens": 108,
+      "output_tokens": 528,
+      "web_search_calls": 3,
+      "web_search_fee_usd": 0.03,
+      "token_cost_usd": 0.00202734,
+      "latency_s": 17.94
+    }
+  ],
+  "totals": {
+    "input_tokens": 67608,
+    "cached_input_tokens": 14255,
+    "cache_write_tokens": 325,
+    "output_tokens": 4751,
+    "web_search_calls": 9,
+    "web_search_fee_usd": 0.09,
+    "latency_s": 62.21,
+    "estimated_cost_usd": 0.09786147,
+    "search_token_cost_usd": 0.00614815,
+    "all_token_cost_usd": 0.00786147
+  },
+  "notes": [
+    "Real browser demo on October26; catalog already seeded with dated products, not cold-start performance.",
+    "3 web research responses each reported3 web_search_calls, despite requested max_tool_calls2; report observed9, not6. Cost caps are estimate reservations, not invoice guarantees.",
+    "Plan-map call does not report cache-write tokens; do not invent missing value.",
+    "Actual_usd field is estimated cost from API-returned usage and dated rate table, NOT an invoice."
+  ]
+}

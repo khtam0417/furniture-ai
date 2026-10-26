@@ -10,8 +10,9 @@ earlier Your place → Your room → Preferences → Furnish & compare flow.
 
 Repository context: this code is also Ken Tam's solo final project for a graduate course (MGT 409); course material
 lives in `docs/` and is not shown in the product. **Status: working local MVP, frozen for submission on
-2026-10-26.** See [docs/STATUS.md](docs/STATUS.md) for what is implemented, tested, and not yet done, and
-[docs/LECTURE_MAPPING.md](docs/LECTURE_MAPPING.md) for how course concepts map to the code.
+2026-10-26.** The final report and slides are in [docs/submission/report.html](docs/submission/report.html) and
+[docs/submission/slides.html](docs/submission/slides.html) (download and open them in a browser).
+[docs/LECTURE_MAPPING.md](docs/LECTURE_MAPPING.md) maps the course concepts to the code.
 
 Built with Claude Code as the development tool. **The application runtime uses only gpt-6-luna through the course
 Portkey gateway and has no Claude/Anthropic dependency** (no Claude account, no Anthropic key).
@@ -24,8 +25,9 @@ Portkey gateway and has no Claude/Anthropic dependency** (no Claude account, no 
    or in the folder directly above it (e.g. `submissions/.env` next to `submissions/<this-repo>/`). The app reads the
    process environment first, then `./.env`, then `../.env` for anything still missing, and never looks higher. The
    key is never shown or logged; the start-up line prints only where it was found (`key source=…`).
-3. **Start:** `./run.sh` (creates `.venv`, installs the pinned `requirements.txt`, serves the UI and API from one
-   server). Open **http://127.0.0.1:8000**. If port 8000 is busy: `./run.sh --port 8080`. Without the script:
+3. **Start:** `PYTHON=python3.12 ./run.sh --port 8000` (or just `./run.sh` if `python3` is 3.12). This creates
+   `.venv`, installs the pinned `requirements.txt`, and serves the UI and API from one server. Open
+   **http://127.0.0.1:8000**. If port 8000 is busy: `./run.sh --port 8080`. Without the script:
    `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && .venv/bin/python serve.py`
    (Windows: `py -3.12 -m venv .venv`, `.venv\Scripts\pip install -r requirements.txt`, `.venv\Scripts\python serve.py`).
 4. **Deterministic demo (no key, no network, no AI):** on the home page press **Example bedroom** or **Example

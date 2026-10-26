@@ -1,0 +1,19 @@
+{
+  "design_version": 8,
+  "actual_browser_downloads": true,
+  "html_total": "2156.97",
+  "xlsx_external_hyperlinks": [
+    "https://www.ikea.com/us/en/p/gladstad-upholstered-bed-frame-kabusa-light-gray-00490466/",
+    "https://www.ikea.com/us/en/p/lack-coffee-table-white-80449901/",
+    "https://www.ikea.com/us/en/p/lillberget-3-drawer-dresser-white-50639851/",
+    "https://www.ikea.com/us/en/p/valevag-pocket-spring-mattress-medium-firm-white-50511857/",
+    "https://www.ikea.com/us/en/p/brimnes-nightstand-white-10234942/",
+    "https://www.article.com/product/22571/timber-90-sofa-pebble-gray"
+  ],
+  "zip_integrity": "passed",
+  "manual_review": "Living,Closet,Laundry corrections persisted",
+  "all_six_products_retained": true,
+  "no_checkout_or_purchase": true,
+  "xlsx_link_count": 6,
+  "html_has_total": true
+}

@@ -1,0 +1,14 @@
+........................................................................ [ 15%]
+........................................................................ [ 30%]
+........................................................................ [ 45%]
+.......................................................s................ [ 60%]
+........................................................................ [ 75%]
+........................................................................ [ 90%]
+................................................                         [100%]
+=============================== warnings summary ===============================
+backend/tests/test_domain.py::test_formats_and_rejections
+  /Users/kentam/Documents/Codex/2026-10-24/we-are-continuing-my-yale-som/work/submission-2026-10-26/fresh-parent/furniture-ai/.venv/lib/python3.12/site-packages/PIL/Image.py:3593: DecompressionBombWarning: Image size (160000 pixels) exceeds limit of 100000 pixels, could be decompression bomb DOS attack.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+479 passed, 1 skipped, 1 warning in 22.08s
